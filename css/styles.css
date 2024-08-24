@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  min-height: 100vh;
+  background-image: url('/images/bg-image.svg');
+  background-size: cover;
+}
+
+header {
+    padding: 12px 24px;
+}
+
+main {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.header__section {
+    text-align: center;
+    color: #fff;
+    padding: 1.25rem;
+}
+
+.header__section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.header__section p {
+    font-size: 1rem;
+}
+
+.contact__section {
+    border-radius: 0.8rem;
+    background-color: #CDD5E0;
+    padding: 1.2rem;
+}
+
+.contact__section form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact__section form label {
+    display: block;
+    margin-bottom: 0.2rem;
+    font-size: 14px;
+    color: #fff;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.row input, .row select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 0.4rem;
+    outline: none;
+    border: none;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 0.4rem;
+    padding: 12px;
+}
+
+button {
+    color: #4036A9;
+    padding: 12px;
+    border-radius: 0.4rem;
+    font-size: 1.25rem;
+    border: none;
+    font-weight: 600;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (min-width:640px) and (max-width:1024px) {
+    main {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    main {
+        width: 90%;
+    }
+
+    .header__section {
+        padding: 0;
+    }
+
+    .header__section h1 {
+        font-size: 2rem;
+    }
+
+    .row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
